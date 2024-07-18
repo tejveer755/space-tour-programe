@@ -35,7 +35,7 @@ function App() {
       const width = window.innerWidth;
 
       switch (location.pathname) {
-        case '/':
+        case '/space-tour-programe/':
           if (width >= 1024) {
             setBgImg({ backgroundImage: `url(${homeDesktop})` });
           } else if (width >= 768) {
@@ -44,7 +44,7 @@ function App() {
             setBgImg({ backgroundImage: `url(${homeMobile})` });
           }
           break;
-        case '/destination':
+        case '/space-tour-programe/destination':
           if (width >= 1024) {
             setBgImg({ backgroundImage: `url(${destinationDesktop})` });
           } else if (width >= 768) {
@@ -53,7 +53,7 @@ function App() {
             setBgImg({ backgroundImage: `url(${destinationMobile})` });
           }
           break;
-        case '/crew':
+        case '/space-tour-programe/crew':
           if (width >= 1024) {
             setBgImg({ backgroundImage: `url(${crewDesktop})` });
           } else if (width >= 768) {
@@ -62,7 +62,7 @@ function App() {
             setBgImg({ backgroundImage: `url(${crewMobile})` });
           }
           break;
-        case '/technology':
+        case '/space-tour-programe/technology':
           if (width >= 1024) {
             setBgImg({ backgroundImage: `url(${technologyDesktop})` });
           } else if (width >= 768) {
