@@ -8,14 +8,14 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img src={star} alt="" onClick={ () => { navigate("./home") }} />
+      <img src={star} alt="" onClick={ () => { navigate("./space-tour-programe/home") }} />
       <hr />
 
       <nav>
         <ul>
 
           <li>
-            <NavLink to="/" >
+            <NavLink to="/space-tour-programe/" >
               <span>
                 <b>00</b>
               </span>{" "}
@@ -23,7 +23,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/destination" >
+            <NavLink to="/space-tour-programe/destination" >
               <span>
                 <b>01</b>
               </span>{" "}
@@ -31,7 +31,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/crew" >
+            <NavLink to="/space-tour-programe/crew" >
               <span>
                 <b>02</b>
               </span>{" "}
@@ -39,7 +39,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/technology" >
+            <NavLink to="/space-tour-programe/technology" >
               <span>
                 <b>03</b>
               </span>{" "}
