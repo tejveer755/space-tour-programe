@@ -54,8 +54,8 @@
     {
       "name": "Mark Shuttleworth",
       "images": {
-        "png": "../assets/crew/image-mark-shuttleworth.png",
-        "webp": "../assets/crew/image-mark-shuttleworth.webp"
+        "png": "./assets/crew/image-mark-shuttleworth.png",
+        "webp": "./assets/crew/image-mark-shuttleworth.webp"
       },
       "role": "Mission Specialist",
       "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
@@ -91,7 +91,7 @@
     {
       "name": "Spaceport",
       "images": {
-        "portrait": "../assets/technology/image-spaceport-portrait.jpg",
+        "portrait": "./assets/technology/image-spaceport-portrait.jpg",
         "landscape": "./assets/technology/image-spaceport-landscape.jpg"
       },
       "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
