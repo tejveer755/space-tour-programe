@@ -39,7 +39,7 @@ const Crew = () => {
         </div>
         <div className="crew-img">
           <img
-            src={images.webp} // Adjust this to correctly access the image URL
+            src={images.png} // Adjust this to correctly access the image URL
             title={name}
             alt={name}
           />
