@@ -92,10 +92,10 @@ function App() {
     <main style={bgImg} className="main-content">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destinations />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/space-tour-programe/" element={<Home />} />
+        <Route path="/space-tour-programe/destination" element={<Destinations />} />
+        <Route path="/space-tour-programe/crew" element={<Crew />} />
+        <Route path="/space-tour-programe/technology" element={<Technology />} />
       </Routes>
     </main>
   );
