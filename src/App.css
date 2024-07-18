@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Barlow Condensed', sans-serif";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+main {
+  width: 100%;
+  height: 110vh;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+
+@media (min-height: 840px) {
+  main {
+    height: 130vh;
+  }
+
+}
+
+@media (min-height: 1000px) {
+  main {
+    height: 170vh;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 3vw;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+.navbar img {
+  margin: auto 20px auto 7vw;
+}
+
+.navbar hr {
+  width: 39vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  border: none;
+  height: 1px;
+  margin: auto 0px;
+  left: 13vw;
+  z-index: 1;
+}
+
+nav {
+  height: 90%;
+  width: 51vw;
+  margin-left: auto;
+  font-family: "Barlow Condensed", sans-serif;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.083);
+  position: relative;
+  z-index: 0;
+}
+
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 0;
+}
+
+.navbar li {
+  height: 100%;
+  padding-top: 37px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+a::before,
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: left 0.4s ease, right 0.4s ease;
+}
+
+a::before {
+  left: 50%;
+  transform: translateX(50%);
+}
+
+a::after {
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+a:hover::after {
+  right: 0;
+  width: 100%;
+}
+
+a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.active-link {
+  border-bottom: 5px solid white;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  margin-top: 16vw;
+  color: #d0d6f9;
+}
+
+
+.home-page article {
+  width: 40%;
+}
+
+.home-page h2 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  font-weight: 400;
+  font-family: Barlow Condensed, sans-serif;
+}
+
+.home-page h1 {
+  font-size: 10vw;
+  font-weight: 200;
+  margin: 20px 0;
+  font-family: "Bellefair", serif;
+}
+
+.home-page p {
+  line-height: 1.5;
+  font-family: "Barlow Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page .explore {
+
+  background-color: #d0d6f900;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.home-page .explore:hover {
+  backdrop-filter: blur(3px);
+  background-color: #d0d6f92f;
+}
+
+.home-page .explore button {
+  font-family: "Bellefair", serif;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  color: rgb(15, 15, 52);
+  text-transform: uppercase;
+  margin: auto;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.crew {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+
+}
+
+.destination h1 {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0 10vw;
+  text-transform: uppercase;
+}
+
+.crew h1 {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0 10vw;
+  text-transform: uppercase;
+}
+
+.destination h1 span {
+  color: #ffffffa8;
+}
+
+.destination .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 500px;
+  margin-top: 10vw;
+  gap: 50px;
+
+}
+
+.crew .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  margin-top: -2vw;
+  gap: 5vw;
+}
+
+.destinationImg {
+  margin-top: 20px;
+  margin: 0 7vw;
+}
+
+.destinationImg img {
+  animation: rotateImage 35s linear infinite;
+}
+
+@media(max-width: 600px) {
+  .destinationImg img {
+    width: 60vw;
+  }
+}
+
+.crew-card {
+  margin-top: 10vw;
+}
+
+.crew-img {
+  height: fit-content;
+}
+
+.crew img {
+  width: 35vw;
+  border-bottom: 1px solid #d0d6f997;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.destinationcard ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #d0d6f9;
+  width: 30vw;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.destinationcard li {
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.active-page {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.destinationcard h2 {
+  font-size: 80px;
+  font-weight: 10;
+  color: white;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+
+.destinationcard p {
+  color: #d0d6f9;
+  width: 45vw;
+  font-size: 19px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.crew-card h2 {
+  font-size: 50px;
+  font-weight: 10;
+  color: white;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+
+.crew-card h3 {
+  font-size: 35px;
+  font-weight: 10;
+  color: grey;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+
+.crew-card p {
+  color: #d0d6f9;
+  width: 45vw;
+  font-size: 19px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.destinationcard hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: #d0d6f962;
+  margin: 50px 0;
+}
+
+.pageNav li::before,
+.pageNav li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #d0d6f9;
+  transition: left 0.4s ease, right 0.4s ease;
+}
+
+.pageNav li::before {
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.pageNav li::after {
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.pageNav li:hover::before {
+  left: 0;
+  width: 66%;
+}
+
+.pageNav li:hover::after {
+  right: 0;
+  width: 66%;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+
+  gap: 70px;
+}
+
+.stats span {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.stats h3 {
+  font-family: "Bellefair", serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 10px;
+  top: 80%;
+  left: 8vw;
+}
+
+.btns div {
+  border-radius: 50%;
+  border: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.inActive {
+  background-color: #d0d6f952;
+}
+
+.active-btn {
+  background-color: white
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.technology h1 {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 10vw;
+}
+
+.description {
+  height: 50vh;
+  padding-top: 20px;
+}
+
+.technology .content {
+  gap: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 4vw;
+  align-items: center;
+}
+
+.technology .content img{
+  width: 40%;
+  height: 100%;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: row;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.buttons div{
+  border: 1px solid hsla(0, 0%, 100%, .477);
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  height: 60px;
+  margin:  20px;
+  width: 60px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inactive-tech{
+  background-color: transparent;
+  color: white;
+}
+ .active-tech{
+  background-color: white;
+ color: #080e32;
+}
+.description h3 {
+  color: #d0d6f9;
+  font-size: 20px;
+  letter-spacing: 2.36px;
+  margin: 30px 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.description h2 {
+  font-family: "Bellefair", serif;
+  font-size: 5vw;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.description p{
+  color: #d0d6f9;
+  width: 40vw;
+  font-size: 21w;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+
+@media (max-width: 1024px) {
+  .technology .content {
+    flex-direction: column-reverse;
+    gap: 10vw;
+    margin: 0;
+    margin-top: 50px;
+  }
+  .technology .content img{
+    width: 100%;
+    height: 60%;
+  }
+  .tech-card{
+    flex-direction: column;
+  }
+  .buttons{
+    flex-direction: row;
+    margin: auto;
+  }
+  .buttons div{
+   margin: 20px;
+  }
+  .description{
+    width: 100%;
+    text-align: center;
+  }
+
+  .description h2{
+    margin: auto;
+    font-size: 9vw;
+  }
+  .description p{
+    margin: auto;
+    width: 90%;
+    font-size: 2vw;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+
+  .navbar {
+    top: 0;
+  }
+
+  .navbar hr {
+    left: 15vw;
+    width: 20%;
+  }
+
+  nav {
+    width: 70%;
+  }
+
+  .home-page {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+
+  .home-page article {
+    width: 100%;
+    text-align: center;
+  }
+
+  .crew-card p {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .crew-card h2 {
+    font-size: 12vw;
+  }
+
+  .home-page h1 {
+    font-size: 20vw;
+  }
+
+  .home-page h2 {
+    font-size: 4vw;
+  }
+
+  .home-page p {
+    font-size: 3vw;
+  }
+
+  .explore {
+    margin-top: 50px;
+  }
+
+  .destination .content {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .crew {
+    margin-top: 150px;
+  }
+
+  .crew img {
+    width: 75vw;
+    height: 90vw;
+  }
+
+  .crew .content {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin-top: 15vw;
+    align-items: center;
+    height: 100%;
+  }
+
+  .crew-card {
+    margin-top: 10vw;
+    text-align: center;
+  }
+
+  .pageNav ul {
+    margin: auto;
+    width: 100%;
+  }
+
+  .destinationImg {
+    margin-bottom: 40px;
+  }
+
+  .destinationcard p {
+    margin: auto;
+    width: 100%;
+  }
+
+  .destinationcard {
+    text-align: center;
+  }
+
+  .destinationcard {
+    width: 70vw;
+  }
+
+  .stats {
+    text-align: start;
+    justify-content: center;
+  }
+
+  .btns {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95vw;
+  }
+
+  .description h2 {
+ font-size: 15vw;
+  }
+  .description p{
+  font-size: 3vw;
+  }
+
+  .technology .content img{
+    height: 60vw;
+  }
+}
+
