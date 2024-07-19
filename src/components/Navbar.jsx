@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img src={star} alt="" onClick={ () => { navigate("./space-tour-programe/home") }} />
+      <img src={star} alt="" onClick={ () => { navigate("./space-tour-programe/") }} />
       <hr />
 
       <nav>
